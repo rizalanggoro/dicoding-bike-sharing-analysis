@@ -18,7 +18,7 @@ conclusions = [
 questionIndex: int = 0
 
 # data harian
-day_df = pd.read_csv('data/day.csv')
+day_df = pd.read_csv('day.csv')
 day_df['workingday_group'] = day_df['workingday'].map({
     0: 'Hari Libur',
     1: 'Hari Kerja',
@@ -38,7 +38,7 @@ day_df['season_group'] = day_df['season'].map({
 
 # sidebar
 with st.sidebar:
-    st.header('Bike Sharing Analysis')
+    st.header('Bike Sharing Analysis Test')
     questionIndex = questions.index(st.selectbox(
         'Pertanyaan',
         options=questions,
